@@ -1,60 +1,53 @@
-# SPA – Manejador de Eventos
+# SPA – Event Manager
 
-**Descripción:**  
-Proyecto **Single Page Application (SPA)** desarrollado con **Vite, HTML, CSS y JavaScript Vanilla**.  
-Simula un **Pagina que permite manejar eventos** donde hay **2 tipos de usuarios**:  
-- **Administrador:** puede gestionar eventos, crear, editar y eliminar.
-- **Visitante:** puede ver eventos e inscribirse.
+**Description:**
+**Single Page Application (SPA)** project developed with **Vite, HTML, CSS, and Vanilla JavaScript**.
+It simulates a **Page that allows managing events** where there are **two types of users**:
+- **Administrator:** can manage events, create, edit, and delete.
+- **Visitor:** can view events and register.
 
-Toda la información se guarda usando **json-server** como backend simulado y **LocalStorage** para la sesión.
+All information is saved using **json-server** as the simulated backend and **LocalStorage** for the session.
 
+## Technologies Used
 
+- **HTML5**, **CSS3**, **Vanilla JavaScript**
+- **Vite** as the development environment
+- **page.js** for SPA routing
+- **json-server** to simulate the REST API
+- **Thunder Client** (or Postman) for testing endpoints
+- **LocalStorage** for session management
 
-## Tecnologías utilizadas
+## Main Features
 
-- **HTML5**, **CSS3**, **JavaScript Vanilla**
-- **Vite** como entorno de desarrollo
-- **page.js** para el enrutamiento SPA
-- **json-server** para simular la API REST
-- **Thunder Client** (o Postman) para testear endpoints
-- **LocalStorage** para manejo de sesión
+* User registration (Visitor role)
+* Login and logout
+* Protected routes and role-based redirection
+* **Admin** panel: create, view, and delete events
+* **Visitor** panel: view available events and register
+* Event-based quota control
+* Fluid SPA navigation without reloading the page
+* Error page for invalid routes
+* Test collection ready to import into Thunder Client
 
-
-
-##  Funcionalidades principales
-
-* Registro de usuario (rol visitante)  
-* Inicio de sesión y cierre de sesión  
-* Rutas protegidas y redireccionamiento según rol  
-* Panel de **Admin**: crear, ver, eliminar cursos  
-* Panel de **Visitador**: ver eventos disponibles e inscribirse
-* Control de cupos por evento 
-* Navegación SPA fluida sin recargar la página  
-* Página de error para rutas no válidas  
-* Colección de pruebas lista para importar en Thunder Client
-
-
-
-## 🗂️ Estructura del proyecto
+## 🗂️ Structure of the project
 
 ```bash
 📦 jorgehenriquez511/
 ├─ 📁 public/
-│   └─ db.json
+│ └─ db.json
 ├─ 📁 src/
-│   ├─ 📁 api/
-│   │   └─ api.js
-│   ├─ 📁 auth/
-│   │   ├─ login.js
-│   │   └─ register.js
-│   ├─ 📁 views/
-│   │   ├─ landing.js
-│   │   ├─ login.js
-│   │   ├─ register.js
-│   │   ├─ dashboardAdmin.js
-│   │   ├─ dashboardVisitor.js
-│   │   └─ error.js
-│   └─ main.js
+│ ├─ 📁 api/
+│ │ └─ api.js
+│ ├─ 📁 auth/
+│ │ ├─ auth.js
+│ ├─ 📁 views/
+│ │ ├─ landing.js
+│ │ ├─ login.js
+│ │ ├─ register.js
+│ │ ├─ dashboardAdmin.js
+│ │ ├─ dashboardVisitor.js
+│ │ └─ error.js
+│ └─ main.js
 ├─ .gitignore
 ├─ index.html
 ├─ package.json
@@ -62,60 +55,55 @@ Toda la información se guarda usando **json-server** como backend simulado y **
 └─ thunder-collection.json
 ```
 
-## Cómo ejecutar localmente
+## How to run locally
 
-1. Instalar dependencias
+1. Install dependencies
 
 ```bash
 npm install
 ```
 
-2. Ejecutar json-server (API)
+2. Run json-server (API)
 
 ```bash
 npx json-server --watch public/db.json --port 3000
 ```
 
-3. Ejecutar Vite para frontend
+3. Run Vite for the frontend
 
 ```bash
 npm run dev
 ```
 
-
-## Usuarios por defecto
-|Rol	|Email	|Contraseña
+## Default Users
+|Role |Email |Password
 |----------|----------|----------|
-|Admin	|admin@example.com|	admin123
-|Estudiantes |Se registran desde la app	|
+|Admin |admin@example.com| admin123
+|visitor |Register from the app |
 
+## Session Management
+* The authenticated user is saved in localStorage under the currentUser key.
 
-## Manejo de sesión
-* El usuario autenticado se guarda en localStorage bajo la clave currentUser.
+* Logout: clears localStorage and redirects to home.
 
-* Cierre de sesión: limpia localStorage y redirige a inicio.
+## Thunder Client Collection
+The thunder-collection.json file is included for testing:
 
+* GET for events
 
-## Colección Thunder Client
-Se incluye el archivo thunder-collection.json para probar:
+* POST for creating events
 
-* GET de eventos
+* PUT for editing events
 
-* POST para crear eventos
+* DELETE for deleting events
 
-* PUT para editar eventos
+* GET for users
 
-* DELETE para eliminar eventos
+* POST for users (registration)
 
-* GET usuarios
+You can import it directly into Thunder Client (or Postman).
 
-* POST usuarios (registro)
-
-Puedes importarlo directamente en Thunder Client (o Postman).
-
-
-## Autor
-Jorge Henriquez Novoa
-📧 jorgeahenriqueznovoa@gmail.com
-
-
+## Author
+* Name: Jorge Henriquez Novoa
+* Email: jorgeahenriqueznovoa@gmail.com
+* Clan: Sierra

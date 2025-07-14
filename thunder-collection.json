@@ -1,52 +1,50 @@
 {
   "client": "Thunder Client",
-  "collectionName": "SPA Final - Prueba Cursos",
+  "collectionName": "SPA Final - Prueba Eventos",
   "dateExported": "2025-06-27T21:00:00Z",
   "requests": [
     {
       "_id": "1",
-      "name": "GET - Todos los cursos",
-      "url": "http://localhost:3000/courses",
+      "name": "GET - Todos los eventos",
+      "url": "http://localhost:3000/events",
       "method": "GET"
     },
     {
       "_id": "2",
-      "name": "POST - Crear curso",
-      "url": "http://localhost:3000/courses",
+      "name": "POST - Crear evento",
+      "url": "http://localhost:3000/events",
       "method": "POST",
       "body": {
         "type": "json",
         "raw": {
-          "title": "Curso de NodeJS",
-          "description": "Aprende backend con Node",
-          "category": "Programación",
-          "capacity": 5,
-          "instructor": "Profesor X",
-          "students": []
+          "name": "Batalla de flores",
+          "description": "Carnaval",
+          "date": "2025-07-15",
+          "capacity": 100,
+          "visitors": []
         }
       }
     },
     {
       "_id": "3",
-      "name": "PUT - Editar curso",
-      "url": "http://localhost:3000/courses/1",
+      "name": "PUT - Editar evento",
+      "url": "http://localhost:3000/events/1",
       "method": "PUT",
       "body": {
         "type": "json",
         "raw": {
-          "title": "Curso de NodeJS Actualizado",
-          "description": "Actualizado",
-          "category": "Programación",
-          "capacity": 8,
-          "instructor": "Profesor X",
-          "students": []
+          "name": "Batalla de flores",
+          "description": "Carnaval",
+          "date": "2025-07-15",
+          "capacity": 100,
+          "visitors": []
         }
       }
     },
     {
       "_id": "4",
-      "name": "DELETE - Eliminar curso",
-      "url": "http://localhost:3000/courses/1",
+      "name": "DELETE - Eliminar evento",
+      "url": "http://localhost:3000/events/1",
       "method": "DELETE"
     },
     {
@@ -63,27 +61,29 @@
       "body": {
         "type": "json",
         "raw": {
-          "name": "Prueba",
-          "email": "prueba@mail.com",
-          "password": "123456",
+          "name": "jorge",
+          "email": "jorge@example.com",
+          "password": "jorge123",
           "rolId": 2
         }
       }
     },
     {
       "_id": "7",
-      "name": "PUT - Inscribir estudiante",
-      "url": "http://localhost:3000/courses/1",
+      "name": "PUT - Inscribir visitante",
+      "url": "http://localhost:3000/event/1",
       "method": "PUT",
       "body": {
         "type": "json",
         "raw": {
-          "title": "Curso de NodeJS",
-          "description": "Aprende backend con Node",
-          "category": "Programación",
+          "id": "a436",
+          "name": "sasads",
+          "description": "dsadsad",
+          "date": "2025-07-18",
           "capacity": 5,
-          "instructor": "Profesor X",
-          "students": ["27ce"]
+          "visitors": [
+            "27ce"
+          ]
         }
       }
     }
