@@ -1,0 +1,91 @@
+{
+  "client": "Thunder Client",
+  "collectionName": "SPA Final - Prueba Cursos",
+  "dateExported": "2025-06-27T21:00:00Z",
+  "requests": [
+    {
+      "_id": "1",
+      "name": "GET - Todos los cursos",
+      "url": "http://localhost:3000/courses",
+      "method": "GET"
+    },
+    {
+      "_id": "2",
+      "name": "POST - Crear curso",
+      "url": "http://localhost:3000/courses",
+      "method": "POST",
+      "body": {
+        "type": "json",
+        "raw": {
+          "title": "Curso de NodeJS",
+          "description": "Aprende backend con Node",
+          "category": "Programación",
+          "capacity": 5,
+          "instructor": "Profesor X",
+          "students": []
+        }
+      }
+    },
+    {
+      "_id": "3",
+      "name": "PUT - Editar curso",
+      "url": "http://localhost:3000/courses/1",
+      "method": "PUT",
+      "body": {
+        "type": "json",
+        "raw": {
+          "title": "Curso de NodeJS Actualizado",
+          "description": "Actualizado",
+          "category": "Programación",
+          "capacity": 8,
+          "instructor": "Profesor X",
+          "students": []
+        }
+      }
+    },
+    {
+      "_id": "4",
+      "name": "DELETE - Eliminar curso",
+      "url": "http://localhost:3000/courses/1",
+      "method": "DELETE"
+    },
+    {
+      "_id": "5",
+      "name": "GET - Todos los usuarios",
+      "url": "http://localhost:3000/users",
+      "method": "GET"
+    },
+    {
+      "_id": "6",
+      "name": "POST - Registrar nuevo usuario",
+      "url": "http://localhost:3000/users",
+      "method": "POST",
+      "body": {
+        "type": "json",
+        "raw": {
+          "name": "Prueba",
+          "email": "prueba@mail.com",
+          "password": "123456",
+          "rolId": 2
+        }
+      }
+    },
+    {
+      "_id": "7",
+      "name": "PUT - Inscribir estudiante",
+      "url": "http://localhost:3000/courses/1",
+      "method": "PUT",
+      "body": {
+        "type": "json",
+        "raw": {
+          "title": "Curso de NodeJS",
+          "description": "Aprende backend con Node",
+          "category": "Programación",
+          "capacity": 5,
+          "instructor": "Profesor X",
+          "students": ["27ce"]
+        }
+      }
+    }
+  ]
+}

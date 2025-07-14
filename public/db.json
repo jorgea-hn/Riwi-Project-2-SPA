@@ -1,0 +1,65 @@
+{
+  "roles": [
+    {
+      "id": "1",
+      "name": "administrador"
+    },
+    {
+      "id": "2",
+      "name": "visitante"
+    }
+  ],
+  "users": [
+    {
+      "id": "15b7",
+      "name": "Admin",
+      "email": "admin@example.com",
+      "password": "admin123",
+      "rolId": 1
+    },
+    {
+      "id": "27ce",
+      "name": "jorge",
+      "email": "jorge@example.com",
+      "password": "jorge123",
+      "rolId": 2
+    },
+    {
+      "id": "82b8",
+      "name": "juan",
+      "email": "juan@example.com",
+      "password": "juan123",
+      "rolId": 2
+    }
+  ],
+  "events": [
+    {
+      "id": "787b",
+      "name": "Batalla de flores",
+      "description": "Carnaval",
+      "date": "2025-07-15",
+      "capacity": 100,
+      "visitors": []
+    },
+    {
+      "id": "5d3d",
+      "name": "Feria de la comida",
+      "description": "Festival municipal de comidas tipicas",
+      "date": "2025-07-17",
+      "capacity": 2,
+      "visitors": [
+        "27ce"
+      ]
+    },
+    {
+      "id": "a436",
+      "name": "sasads",
+      "description": "dsadsad",
+      "date": "2025-07-18",
+      "capacity": 5,
+      "visitors": [
+        "27ce"
+      ]
+    }
+  ]
+}

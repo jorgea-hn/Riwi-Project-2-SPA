@@ -1,0 +1,217 @@
+/* Reset CSS styles-------------------------------------------------------- */ 
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* #app{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vh;
+    min-height: 100vh;
+} */
+
+/* Landing page styles-------------------------------------------------------- */
+
+header{
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+h1{
+    width: 30%;
+}
+
+nav{
+    width: 70%;
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+}
+
+main{
+    min-height: 80vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Botones landing page------------------------------------------------------------------ */
+#go-login, #send-login, #logout, .edit-event, .delete-event,.enroll{
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#go-login:hover{
+    background-color: #45a049;
+}
+
+#go-register, #send-register{
+    background-color: #008CBA;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#go-register:hover{
+    background-color: #007bb5;
+}
+
+
+/* Login styles--------------------------------------------------------------- */
+#login-section{
+    width: 100%;
+    max-width: 400px;
+    height: 50vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+}
+
+#login-form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
+
+#login-form input{
+    height: 30px;
+}
+
+#send-login{
+    height: 40px;
+    margin-top: 30px;
+}
+
+/* Register styles------------------------------------------------------------ */ 
+#register-section{
+    width: 100%;
+    max-width: 400px;
+    height: 50vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+}
+
+#register-form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
+
+#register-form input{
+    height: 30px;
+}
+
+#send-register{
+    height: 40px;
+    margin-top: 30px;
+}
+
+
+/* dashboard admin --------------------------------------------------------------------------------------- */
+
+#logout, .delete-event{
+    background-color: #f44336;
+}
+
+#section-admin-form{
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#event-form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    gap: 10px;
+    height: 400px;
+}
+
+#event-form h3{
+    text-align: center;
+}
+
+#event-form input{
+    height: 30px;
+}
+
+#send-add-event{
+    height: 40px;
+    margin-top: 20px;
+}
+
+#section-events-list{
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#events-list{
+    width: 100%;
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+table, td, th {  
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 15px;
+}
