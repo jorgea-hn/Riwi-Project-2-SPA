@@ -1,5 +1,8 @@
+// Import CRUD 
 import { apiGet, apiPost, apiPut, apiDelete } from "../api/api.js";
 
+
+// Views of dashboardAdmin
 export default function DashboardAdmin() {
   return `
     <section id="admin-dashboard">
@@ -40,7 +43,6 @@ export default function DashboardAdmin() {
               <th>Description</th>
               <th>Capacity</th>
               <th>Date</th>
-              <th>Inscritos</th>
               <th>Options</th>
             </tr>
             </thead>
@@ -57,13 +59,14 @@ export default function DashboardAdmin() {
 export async function loadAdminDashboard() {
   const list = document.getElementById("events-list-content");
   const res = await apiGet("events");
+
+
   list.innerHTML = res.map(v => `
       <tr>
         <td>${v.name}</td>
         <td>${v.description}</td>
         <td>${v.capacity}</td>
         <td>${v.date}</td>
-        <td>${v.visitors.length}</td>
         <td>
         <button class="edit-event" data-id="${v.id}">Editar</button>
         <button class="delete-event" data-id="${v.id}">Eliminar</button>
@@ -88,13 +91,30 @@ export async function loadAdminDashboard() {
   };
 
   list.onclick = async (e) => {
+    
+
     const id = e.target.dataset.id;
     if (e.target.classList.contains("delete-event")) {
       await apiDelete("events", id);
       alert("Evento eliminado");
       loadAdminDashboard();
     }
-    // EDIT LOGIC: similar, abre modal con datos y usa apiPut
+
+    // if (e.target.classList.contains("edit-event")) {
+
+
+    //   const data = {
+    //     name: document.getElementById("event-name").value.trim(),
+    //     description: document.getElementById("event-desc").value.trim(),
+    //     date: document.getElementById("event-date").value.trim(),
+    //     capacity: parseInt(document.getElementById("event-capacity").value),
+    //     visitors: []
+    //   };
+
+    //   await apiPut("events", id, data);
+    //   alert("Evento Actualizado");
+    // }
+
   };
 }
 

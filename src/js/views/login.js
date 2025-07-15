@@ -1,3 +1,4 @@
+// Views for Login with form
 export default function LoginView() {
   return `
     <section id="login-section">

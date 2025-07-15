@@ -1,7 +1,7 @@
 # SPA – Event Manager
 
 **Description:**
-**Single Page Application (SPA)** project developed with **Vite, HTML, CSS, and Vanilla JavaScript**.
+**Single Page Application (SPA)** project developed with **Vite, HTML, CSS, and Vanilla JavaScript, Node**.
 It simulates a **Page that allows managing events** where there are **two types of users**:
 - **Administrator:** can manage events, create, edit, and delete.
 - **Visitor:** can view events and register.
@@ -10,7 +10,7 @@ All information is saved using **json-server** as the simulated backend and **Lo
 
 ## Technologies Used
 
-- **HTML5**, **CSS3**, **Vanilla JavaScript**
+- **HTML5**, **CSS3**, **Vanilla JavaScript**,**Node**
 - **Vite** as the development environment
 - **page.js** for SPA routing
 - **json-server** to simulate the REST API

@@ -1,3 +1,4 @@
+// Import views with functions
 import page from "page";
 import LandingView from "./views/landing.js";
 import LoginView from "./views/login.js";
@@ -7,9 +8,10 @@ import DashboardVisitor, { loadVisitorDashboard } from "./views/dashboardVisitor
 import ErrorView from "./views/error.js";
 import { loginUser, registerUser } from "./auth/auth.js";
 
+// Constant with principal component
 const app = document.querySelector("#app");
 
-
+// Authenticate function to validate that it is authenticated
 function isAuthenticated() {
   return !!localStorage.getItem("currentUser");
 }
@@ -20,6 +22,7 @@ function getUserRole() {
   return parseInt(user?.rolId);
 }
 
+// Route management
 
 page("/", () => {
   if (isAuthenticated()) {

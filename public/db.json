@@ -34,31 +34,37 @@
   ],
   "events": [
     {
-      "id": "787b",
-      "name": "Batalla de flores",
-      "description": "Carnaval",
-      "date": "2025-07-15",
-      "capacity": 100,
+      "id": "30e0",
+      "name": "adsdsadsadsa",
+      "description": "ddasdsadsad",
+      "date": "2025-07-03",
+      "capacity": 7,
       "visitors": []
     },
     {
-      "id": "5d3d",
-      "name": "Feria de la comida",
-      "description": "Festival municipal de comidas tipicas",
-      "date": "2025-07-17",
-      "capacity": 2,
-      "visitors": [
-        "27ce"
-      ]
+      "id": "30e4",
+      "name": "adsdsadsadsa",
+      "description": "ddasdsadsad",
+      "date": "2025-07-03",
+      "capacity": 7,
+      "visitors": []
     },
     {
-      "id": "a436",
-      "name": "sasads",
-      "description": "dsadsad",
+      "id": "30e5",
+      "name": "adsdsadsadsa",
+      "description": "ddasdsadsad",
+      "date": "2025-07-03",
+      "capacity": 7,
+      "visitors": []
+    },
+    {
+      "id": "c6cb",
+      "name": "Batalla de flores",
+      "description": "Carnaval",
       "date": "2025-07-18",
-      "capacity": 5,
+      "capacity": 7,
       "visitors": [
-        "27ce"
+        "82b8"
       ]
     }
   ]

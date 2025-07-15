@@ -1,5 +1,8 @@
+// import pages package for route management
 import page from "page";
 
+
+// Function Login
 export async function loginUser(email, password, msgElement) {
   const res = await fetch(`http://localhost:3000/users?email=${email}`);
   const users = await res.json();
@@ -15,6 +18,8 @@ export async function loginUser(email, password, msgElement) {
   return true;
 }
 
+
+// Function Register
 export async function registerUser(name, email, password, msgElement) {
   const res = await fetch(`http://localhost:3000/users?email=${email}`);
   const exists = await res.json();
@@ -30,6 +35,7 @@ export async function registerUser(name, email, password, msgElement) {
     body: JSON.stringify({ name, email, password, rolId: 2 })
   });
 
+  // verification message
   msgElement.textContent = "Registro exitoso, redirigiendo...";
   setTimeout(() => page("/login"), 1500);
   return true;

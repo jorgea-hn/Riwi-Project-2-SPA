@@ -1,3 +1,4 @@
+// Main View 
 export default function LandingView() {
   return `
     <header>

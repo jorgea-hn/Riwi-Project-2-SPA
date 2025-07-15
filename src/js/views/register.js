@@ -1,3 +1,4 @@
+// Views for register with form
 export default function RegisterView() {
   return `
     <section id="register-section">

@@ -1,5 +1,10 @@
+// Endpoint
 const BASE_URL = 'http://localhost:3000';
 
+// Functions CRUD
+
+
+// Function GET
 export async function apiGet(resource) {
   const res = await fetch(`${BASE_URL}/${resource}`);
   if (!res.ok) {
@@ -8,6 +13,8 @@ export async function apiGet(resource) {
   return await res.json();
 }
 
+
+// Function POST
 export async function apiPost(resource, data) {
   const res = await fetch(`${BASE_URL}/${resource}`, {
     method: 'POST',
@@ -17,6 +24,8 @@ export async function apiPost(resource, data) {
   return await res.json();
 }
 
+
+// Function PUT
 export async function apiPut(resource, id, data) {
   const res = await fetch(`${BASE_URL}/${resource}/${id}`, {
     method: 'PUT',
@@ -26,6 +35,7 @@ export async function apiPut(resource, id, data) {
   return await res.json();
 }
 
+// Function Delete
 export async function apiDelete(resource, id) {
   return await fetch(`${BASE_URL}/${resource}/${id}`, {
     method: 'DELETE'

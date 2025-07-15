@@ -56,7 +56,7 @@ footer{
 }
 
 /* Botones landing page------------------------------------------------------------------ */
-#go-login, #send-login, #logout, .edit-event, .delete-event,.enroll{
+#go-login, #send-login, #logout, .edit-event, .delete-event,.enroll, .unenroll{
     background-color: #4CAF50;
     color: white;
     padding: 10px 20px;
@@ -152,7 +152,7 @@ footer{
 
 /* dashboard admin --------------------------------------------------------------------------------------- */
 
-#logout, .delete-event{
+#logout, .delete-event, .unenroll{
     background-color: #f44336;
 }
 
