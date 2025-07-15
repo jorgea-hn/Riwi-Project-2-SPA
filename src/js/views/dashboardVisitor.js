@@ -90,7 +90,7 @@ export async function loadVisitorDashboard(userId) {
   available.onclick = async (e) => {
     const id = e.target.dataset.id;
 
-    // inscription
+    // Register event
     if (e.target.classList.contains("enroll")) {
       const events = await apiGet(`events/${id}`);
       if (events.visitors.length >= events.capacity) {
@@ -104,7 +104,7 @@ export async function loadVisitorDashboard(userId) {
     }
     }
 
-
+    // Unregister event
   mine.onclick = async (e) => {
     const id = e.target.dataset.id;
     // uninscription

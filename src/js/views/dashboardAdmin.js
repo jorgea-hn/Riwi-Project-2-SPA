@@ -91,8 +91,6 @@ export async function loadAdminDashboard() {
   };
 
   list.onclick = async (e) => {
-    
-
     const id = e.target.dataset.id;
     if (e.target.classList.contains("delete-event")) {
       await apiDelete("events", id);

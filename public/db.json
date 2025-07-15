@@ -55,7 +55,9 @@
       "description": "ddasdsadsad",
       "date": "2025-07-03",
       "capacity": 7,
-      "visitors": []
+      "visitors": [
+        "82b8"
+      ]
     },
     {
       "id": "c6cb",
@@ -63,9 +65,7 @@
       "description": "Carnaval",
       "date": "2025-07-18",
       "capacity": 7,
-      "visitors": [
-        "82b8"
-      ]
+      "visitors": []
     }
   ]
 }
